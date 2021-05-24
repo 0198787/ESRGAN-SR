@@ -13,11 +13,9 @@ Es una técnica de escalado que simplemente escala los pixeles existentes con un
 
 Este escalado usa un algoritmo de interpolación del tipo &quot;Nearest Neighbor&quot;, también denominado de interpolación proximal, y permite introducir la información que falta debido a la redimensión de la imagen partiendo de la información original, colocando el color asociado al pixel original más cercano al pixel objetivo.
 
-![](RackMultipart20210524-4-1s73ajx_html_7c335eeb62a637df.png) ![](RackMultipart20210524-4-1s73ajx_html_2f1a5562695ad86.png)
+<img width="871" alt="image31" src="https://user-images.githubusercontent.com/82851310/119289420-2fa87580-bc10-11eb-96db-3b980fca0e1b.png">
+<img width="830" alt="image32" src="https://user-images.githubusercontent.com/82851310/119289423-30d9a280-bc10-11eb-9870-542b18541e06.png">
 
-![](RackMultipart20210524-4-1s73ajx_html_35fa43330d33df46.png)
-
-![](RackMultipart20210524-4-1s73ajx_html_972adc27f1c51020.png)
 
 1. Explicación redes neuronales
 
@@ -29,7 +27,6 @@ Una vez que se ha alcanzado el final de la red se obtiene una salida que será l
 
 Para conseguir que una red neuronal realice las funciones deseadas, es necesario entrenarla. El entrenamiento de una red neuronal se realiza modificando los pesos de sus neuronas para que consiga extraer los resultados deseados.
 
-![](RackMultipart20210524-4-1s73ajx_html_371d17caf5776b5.png)
 
 
 
@@ -43,19 +40,18 @@ mejorar la pérdida de percepción utilizando las funciones antes de la activaci
 
 A diferencia de SRGAN, que afirmó que los modelos más profundos son cada vez más difíciles de entrenar, nuestro modelo ESRGAN más profundo muestra su rendimiento superior con un entrenamiento sencillo.
 
-![](RackMultipart20210524-4-1s73ajx_html_f056cb4a3ece7e65.png)
+![image6](https://user-images.githubusercontent.com/82851310/119289515-59619c80-bc10-11eb-86b9-43790762515c.png)
+![image7](https://user-images.githubusercontent.com/82851310/119289518-5a92c980-bc10-11eb-9ddc-f3dc2bb70064.png)
 
-![](RackMultipart20210524-4-1s73ajx_html_37bda66f89e71a30.png)
 
 Se propone la estrategia de interpolación de redes para equilibrar la calidad visual y la PSNR esta estrategia de interpolación de la red proporciona un control fluido del modelo RRDB\_PSNR y el modelo ESRGAN ajustado.
 
-![](RackMultipart20210524-4-1s73ajx_html_e7301422e300fe59.png)
-
-![](RackMultipart20210524-4-1s73ajx_html_306ad8db28328cf4.png)
+![image8](https://user-images.githubusercontent.com/82851310/119289541-68e0e580-bc10-11eb-9f02-d8b1c5a629b1.png)
 
 Comparaciones visuales generales para mostrar los efectos de cada componente en ESRGAN. Cada columna representa un modelo con sus configuraciones en la parte superior. El signo rojo indica la principal mejora en comparación con el modelo anterior.
 
-![](RackMultipart20210524-4-1s73ajx_html_4f210ee45a76f990.png)
+![image10](https://user-images.githubusercontent.com/82851310/119289570-7c8c4c00-bc10-11eb-9905-7dded67a0b9b.png)
+
 
 1. Explicación del funcionamiento del programa
 
@@ -65,31 +61,37 @@ Comparaciones visuales generales para mostrar los efectos de cada componente en 
 
 - Es importante verificar que las carpetas se encuentren vacías, ya que si no, las imágenes no se podrán cargar correctamente en dichas direcciones.
 
-![](RackMultipart20210524-4-1s73ajx_html_83bae633897273cf.png)
+![image11](https://user-images.githubusercontent.com/82851310/119289559-74cca780-bc10-11eb-93aa-31530da19ea5.png)
+
 
 En esta celda se muestra el código para cargar las imágenes,El widget de carga solo está disponible cuando la celda se ha ejecutado en la sesión actual del navegador. Vuelva a ejecutar esta celda para habilitarla.
 
-![](RackMultipart20210524-4-1s73ajx_html_7252aa550b8f14d8.png)
+![image12](https://user-images.githubusercontent.com/82851310/119289585-831ac380-bc10-11eb-8eb4-1e4e4be8f698.png)
+
 
 Agregamos los videos el nombre de archivo de vídeo no debe contener espacios.
+![image13](https://user-images.githubusercontent.com/82851310/119289603-86ae4a80-bc10-11eb-81cd-b2258ec60558.png)
 
-![](RackMultipart20210524-4-1s73ajx_html_8fa66a278491ff27.png)
 
 Esta celda convierte su video en cuadros individuales y los guarda en la carpeta &#39;LR&#39;.
 
-![](RackMultipart20210524-4-1s73ajx_html_69690397e3e38886.png)
+![image14](https://user-images.githubusercontent.com/82851310/119289611-88780e00-bc10-11eb-8f58-a8f2f4579cee.png)
+
 
 En esta sección se agregan los modelos pre entrenados.
 
-![](RackMultipart20210524-4-1s73ajx_html_a7259790ccd9e5b3.png)
+
+![image15](https://user-images.githubusercontent.com/82851310/119289622-8ca42b80-bc10-11eb-8717-e9ccb9edc2cd.png)
+
 
 En esta sección se selecciona el modelo pre entrenado con el cual se va a ejecutar el programa y también se selecciona la plataforma de ejecución
+![image15](https://user-images.githubusercontent.com/82851310/119289634-9037b280-bc10-11eb-80c5-915807e3cc08.png)
 
-![](RackMultipart20210524-4-1s73ajx_html_7a5abfd818fcd7ce.png)
 
 En esta celda se ejecuta para codificar los resultados en un video.
 
-![](RackMultipart20210524-4-1s73ajx_html_2de8e82559f003e7.png)
+![image16](https://user-images.githubusercontent.com/82851310/119289641-9332a300-bc10-11eb-9772-b0fea87171e0.png)
+
 
 1. Implementación
 
@@ -105,19 +107,23 @@ En esta celda se ejecuta para codificar los resultados en un video.
 
 A continuación se muestran algunos resultados de la primera implementación del código, cabe mencionar que algunos no fueron muy buenos debido a que la imagen inicial fue con extrema mala resolución y tamaño excesivamente pequeño, esto se realizó para poner a prueba la efectividad del programa.
 
-![](RackMultipart20210524-4-1s73ajx_html_8cd6bed00028a825.png)
+![image18](https://user-images.githubusercontent.com/82851310/119289651-97f75700-bc10-11eb-9d46-cb95554be263.png)
 
-En las siguientes imágenes se aprecia el resultado del mismo escalado, con un poco de zoom podremos observar algunos defectos, sin embargo a distancia el resultado es muy aceptable, claramente esta imagen es muy pequeña 120x120 por lo que al acercar la imagen se clarifican las diferencias. ![](RackMultipart20210524-4-1s73ajx_html_ae988b1ce44b354b.png)
+
+En las siguientes imágenes se aprecia el resultado del mismo escalado, con un poco de zoom podremos observar algunos defectos, sin embargo a distancia el resultado es muy aceptable, claramente esta imagen es muy pequeña 120x120 por lo que al acercar la imagen se clarifican las diferencias. ![image19](https://user-images.githubusercontent.com/82851310/119289661-9c237480-bc10-11eb-9f9e-2725f2c80e8d.png)
+
 
 ![](RackMultipart20210524-4-1s73ajx_html_ae988b1ce44b354b.png)
 
 Las próxima imágen es de buena resolución pero de bajo tamaño, la primera es de 200 x 200 píxeles, posteriormente al reescalado se obtuvo una imagen de 800 x 800 píxeles, se puede apreciar que la calidad es mayor.
 
-![](RackMultipart20210524-4-1s73ajx_html_9cb10314b75c515.png)
+![image20](https://user-images.githubusercontent.com/82851310/119289674-a5144600-bc10-11eb-9124-1d9868671543.png)
+
 
 La imagen se escaló de 5000x200 a 20000x800, sin embargo la diferencia no fue muy notable debido a que la imagen inicial es de alta resolución, a pesar de ello se aprecia una mejor calidad de imagen.
 
-![](RackMultipart20210524-4-1s73ajx_html_229924b2fcb5057b.png)
+![image21](https://user-images.githubusercontent.com/82851310/119289679-a776a000-bc10-11eb-86fb-7938130511a5.png)
+
 
 \* En este caso el reescalado fue bueno ya que la calidad de imagen inicial es alta aunque muy pequeña.
 
@@ -131,7 +137,8 @@ Podemos reagrupar los muchos frames obtenidos, o en su defecto, dejarlos como fr
 
 Al final de compilarlo, y reagrupar las imágenes para hacerlo un video, como estaba en su inicio, obtuvimos estos resultados:
 
-![](RackMultipart20210524-4-1s73ajx_html_5e5ae4212aaf1f7f.png)
+![image22](https://user-images.githubusercontent.com/82851310/119289689-acd3ea80-bc10-11eb-8849-1c69e0a66301.png)
+
 
 - Como podemos observar, el video pasó de una baja resolución, a una resolución mayor.
 
@@ -160,42 +167,35 @@ Quadro Sync II, Quadro Sync
 NVS 810, NVS 510, NVS 315, NVS 310
 
 A continuación se muestran los modelos extras que se agregaron para incrementar la calidad de salida de las imágenes, con ello las redes neuronales cuentan con mayor información para poder realizar las predicciones.
+![image23](https://user-images.githubusercontent.com/82851310/119289697-b1989e80-bc10-11eb-966d-9586946699e0.png)
 
-![](RackMultipart20210524-4-1s73ajx_html_79f0defb6f99785.png)
 
 En las siguientes imágenes se muestra el doble reescalado con la obtención de mejores resultados, la aplicación de una mejora en el dataset sin duda ayuda al modelo a obtener mejores resultados, aunado a esto la plataforma CUDA es más potente que la de nuestro como podemos observar a continuación, la calidad de la imagen es mucho mayor en el escalado final.
 
-![](RackMultipart20210524-4-1s73ajx_html_f598960aa5c14620.png)
+<img width="915" alt="image24" src="https://user-images.githubusercontent.com/82851310/119289708-b78e7f80-bc10-11eb-9c1b-ee5f581d7601.png">
 
-![](RackMultipart20210524-4-1s73ajx_html_75523b6daaf7f3.png) ![](RackMultipart20210524-4-1s73ajx_html_8ca4c3cdfb2a8dbc.png)
-
-![](RackMultipart20210524-4-1s73ajx_html_55e26b54d7cff75e.png)
 
 En este caso se muestra una imagen .jpg que se convirtió a .png para poderla ingresar en el programa, el escalado fue de 936 x 688 a 3744 x 2752, por lo que se obtuvo una mejora muy significativa que podemos apreciar a continuación.
+<img width="958" alt="image28" src="https://user-images.githubusercontent.com/82851310/119289730-beb58d80-bc10-11eb-9e0e-c00a73ed8aee.png">
 
-![](RackMultipart20210524-4-1s73ajx_html_e4e6b6c3783aa935.png)
 
-![](RackMultipart20210524-4-1s73ajx_html_a8e55749764f715.png)
-
-![](RackMultipart20210524-4-1s73ajx_html_f21fec96f8984cfa.png)
-
-![](RackMultipart20210524-4-1s73ajx_html_704625eb07bd3fc6.png)
-
-![](RackMultipart20210524-4-1s73ajx_html_be916190c39931b.png)
 
 A continuación podemos observar distintas ejecuciones donde podemos comparar los resultados de nuestro equipo con el mismo modelo de entrenamiento contra los resultados de Google colab y CUDA
 
 Imagen original
 
-![](RackMultipart20210524-4-1s73ajx_html_76ea1dd30bbac315.png)
+![image33](https://user-images.githubusercontent.com/82851310/119289739-c412d800-bc10-11eb-944d-9a268baf3d3e.png)
+
 
 Ejecución en CPU DELL Core i7 8Gb RAM Intel HD Graphics 400 NVIDIA NVS 5200M
 
-![](RackMultipart20210524-4-1s73ajx_html_ba6db8503fb6c664.png)
+![image34](https://user-images.githubusercontent.com/82851310/119289744-c6753200-bc10-11eb-9536-bc650fe7d48d.png)
+
 
 Ejecución con Google colab NVIDIA-SMI 465.19.01 y CUDA 11.2 , modelo RRDB\_ESRGAN\_x4
 
-![](RackMultipart20210524-4-1s73ajx_html_a652d64b7120fe50.png)
+![image35](https://user-images.githubusercontent.com/82851310/119289751-c83ef580-bc10-11eb-9568-abe22095f334.png)
+
 
 1. Conclusión y comentarios
 
