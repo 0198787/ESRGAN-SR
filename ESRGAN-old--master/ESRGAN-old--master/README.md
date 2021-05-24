@@ -1,18 +1,4 @@
-#
-# Proyecto final
 
-# Universidad Panamericana
-
-#
-# Robótica industrial
-
-# Pablo Orea González Rul
-
-# Roberto Eduardo Padilla García
-
-Erick Santiago Quirarte Sánchez
-
-# Mtro. Michel Emanuel López Franco
 
 1. Introducción
 
